@@ -3,10 +3,10 @@ while True:
     weight = float(input("Sizning vazningiz kg: "))
 
     bmi = weight / (height ** 2)
-    bmi = round(bmi, 1)
+    # bmi = round(bmi, 1)
 
     if bmi < 18.5:
-        print(f"BMI {bmi} Vazningiz kam")
+        print("Sizning BMI " + format(bmi, ".1f") + " Vazningiz kam")
     elif bmi > 18.5 and bmi < 24.9:
         print(f"BMI {bmi} Vazningiz o'rtacha")
     elif bmi > 25.0 and bmi < 29.9:
